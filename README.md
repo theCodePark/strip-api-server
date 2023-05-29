@@ -8,7 +8,7 @@ Before running this code, ensure that you have the following set up:
 
 - Node.js installed on your machine.
 - A Stripe account and API keys. If you don't have one, you can sign up for free at [Stripe](https://stripe.com/).
-- An environment file (`.env`) with your Stripe API secret key (`STRIPE_SECRET_TEST`).
+- An environment file (`.env`) with your Stripe API secret key (`STRIPE_SECRET_TEST`) and (`STRIPE_SECRET_LIVE`).
 
 ## Installation
 
@@ -37,6 +37,8 @@ npm start
 ```
 
 The server will listen on the specified port (default is 4000) or the port specified in the environment variable `PORT`.
+
+To deploy the server to Heroku, follow the instructions in the [Heroku documentation](https://devcenter.heroku.com/articles/git).
 
 ## Endpoints
 
