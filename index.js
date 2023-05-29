@@ -34,6 +34,10 @@ app.post("/payment", cors(), async (req, res) => {
 	}
 })
 
+app.get("/", (req, res) => {
+	res.send("Landing Page of server")
+})
+
 app.listen(process.env.PORT || 4000, () => {
 	console.log("Sever is listening on port 4000")
 })
