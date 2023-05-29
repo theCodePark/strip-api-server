@@ -28,7 +28,7 @@ app.post("/payment", cors(), async (req, res) => {
 	} catch (error) {
 		console.log("Error", error)
 		res.json({
-			message: "Payment failed: " + error,
+			message: "Payment failed: " + error + "key: " + process.env.STRIPE_SECRET_LIVE,
 			success: false
 		})
 	}
