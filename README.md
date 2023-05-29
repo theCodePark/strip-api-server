@@ -33,7 +33,7 @@ Before running this code, ensure that you have the following set up:
 To start the server, run the following command:
 
 ```shell
-npm start
+npm run start
 ```
 
 The server will listen on the specified port (default is 4000) or the port specified in the environment variable `PORT`.
@@ -44,7 +44,7 @@ To deploy the server to Heroku, follow the instructions in the [Heroku documenta
 heroku login
 git add --a
 git commit -m "commit message"
-git push Heroku master
+git push heroku master
 ```
 
 ## Endpoints
@@ -69,7 +69,7 @@ If an error occurs during the payment process, the server will return a JSON res
 
 ```json
 {
-  "message": "Payment failed",
+	"message": "Payment failed: <error message>",
   "success": false
 }
 ```
