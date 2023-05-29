@@ -40,6 +40,13 @@ The server will listen on the specified port (default is 4000) or the port speci
 
 To deploy the server to Heroku, follow the instructions in the [Heroku documentation](https://devcenter.heroku.com/articles/git).
 
+```shell
+heroku login
+git add --a
+git commit -m "commit message"
+git push Heroku master
+```
+
 ## Endpoints
 
 ### POST /payment
